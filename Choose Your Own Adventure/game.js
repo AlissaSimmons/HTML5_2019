@@ -14,6 +14,24 @@ Multiline comment
 
 // ("What type of pokemon do you like/");
 
+/*
+function Castle(){
+    var insideCstle = prompt(" upstairs - downstairs - courtyard").toLowerCase();
+    
+    switch(insideCastle){
+    case "upstairs" || "go upstairs":
+        var upstairs = prompt("You walk a long flight of stairs to the top floor");
+    }
+    break;
+    case "balcony":
+        alert("you go to the balcony");
+        Castle();
+    default:
+         alert("I'm not sure what "+insideCastle+" is");
+         Castle();
+    break;
+*/
+
 var inventory = {
     Coins: 10,
     Dagger: 0,
@@ -27,13 +45,13 @@ function Game(){
     
     document.write("Paint.");
     var playerName = prompt("What is your title?");
-    alert("Velkommen, "+ playerName);
-    alert("You wake up with hazy vision. After being still for a moment, the colors slowly seperate and you can make out basic shapes again.");
+    confirm("Velkommen, "+ playerName);
+    confirm("You wake up with hazy vision. After being still for a moment, the colors slowly seperate and you can make out basic shapes again.");
     
 Bottomfloor();
 
     function Bottomfloor(){
-        var Bottomfloor = prompt("You sit up and find yourself in a white room. There is a door behind you, some paintings in front of you, and a set of stairs to the right.").toLowerCase();
+        var Bottomfloor = prompt("You sit up and find yourself in a white room. There is a door behind you, some paintings in front of you, and a set of stairs to the right. What would you like to do?").toLowerCase();
     
     if(Bottomfloor == "look around" || Bottomfloor == "look"){
         var bottomfloorLook = prompt("The room is quite small. There is a door behind you, some paintings in front of you, and a set of stairs to the right. Everything but the paintings is white.");
@@ -43,7 +61,7 @@ Bottomfloor();
         
         if(direction == "paintings" || "painting"){
             alert("There are five paintings.");
-            alert("The sign on the wall says do not touch, but there is an urge in the back of your mind.")
+            alert("The sign on the wall says do not touch, but there is an urge in the back of your mind that begs you to. At this rate, you're not sure you have a choice anymore.")
         }
         
     else if(Bottomfloor == "go back to sleep" || Bottomfloor == "sleep"){
@@ -77,4 +95,4 @@ Bottomfloor();
                         Bottomfloor();
                         }
     }
-}
+}    
