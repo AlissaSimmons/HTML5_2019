@@ -43,9 +43,15 @@ Game();
 
 function Game(){
     
+    
     document.write("Paint.");
     var playerName = prompt("What is your title?");
     confirm("Velkommen, "+ playerName);
+    
+    var nickNames = ["Beezer", "Shrek", "Vanya", "Orco", "Peaches", "Munch"];
+    confirm("How about I call you "=gameNames[Math.floor(Math.random()*Math.floor*6)]+"?");
+    confirm("You really agree to being called " +nickNames+ " ? Wow, you really won't make it.")
+    
     confirm("You wake up with hazy vision. After being still for a moment, the colors slowly seperate and you can make out basic shapes again.");
     
 Bottomfloor();
