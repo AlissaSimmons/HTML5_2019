@@ -2,7 +2,8 @@ var inventory = {
     Coins: 10,
     Dagger: 0,
     Hearts: 0,
-    MushroomPeices: 0
+    MushroomPeices: 0,
+    Torches: 0
 }
 
 Game();
