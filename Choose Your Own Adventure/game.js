@@ -4,6 +4,7 @@ var inventory = {
     Hearts: 0,
     MushroomPeices: 0,
     Torches: 0
+    
 }
 
 Game();
@@ -15,10 +16,13 @@ function Game(){
     confirm("Velkommen, "+ playerName);
     
     var nickNames = ["Beezer", "Shrek", "Vanya", "Orco", "Peaches", "Munch"];
-    confirm("How about I call you "+gameNames[Math.floor(Math.random()* 6)]+" instead?");
-    confirm("You really agree to being called " +nickNames+ " ? Wow, now I know you won't make it.");
     
-    confirm("You wake up with hazy vision. After being still for a moment, the colors slowly seperate and you can make out basic shapes again.");
+    nickname = nickNames[Math.floor(Math.random()* 6)]
+    
+    confirm("How about I call you "+nickname+" instead?");
+    alert("You really agree to being called " +nickname+ "? Wow, now I know you won't make it.");
+    
+    alert("You wake up with hazy vision. After being still for a moment, the colors slowly seperate and you can make out basic shapes again.");
     
 Bottomfloor();
 
@@ -34,6 +38,12 @@ Bottomfloor();
         if(direction == "paintings" || "painting"){
             alert("There are five paintings.");
             alert("The sign on the wall says do not touch, but there is an urge in the back of your mind that begs you to. At this rate, you're not sure you have a choice anymore.");
+            
+            var choice = prompt("Although you don't have a choice but to touch one of the paintings, you do have a choice of which one. What painting do you coose?").toLowerCase();
+            
+            if(choice == "forest" || "the forest painting" || "the forest one"){
+                Forest();
+            }
         }
         
     else if(Bottomfloor == "go back to sleep" || Bottomfloor == "sleep"){
@@ -59,7 +69,7 @@ Bottomfloor();
                         // ads =1 mushroom peice
                         inventory.MushroomPeices ++;
                         // Displays mushroom peices
-                        alert("You now have" +inventory.MushroomPeices+" Mushroom Peices.");
+                        alert("You now have " +inventory.MushroomPeices+" Mushroom Peice(s).");
                         Forest();
                         }
                         else{
