@@ -26,16 +26,16 @@ function Game() {
     Bottomfloor();
     
     function Bottomfloor() {
-        var bottomfloor = prompt("You sit up and find yourself in a white room. There is a door behind you, some paintings in front of you, and a set of stairs to the right. What would you like to do?").toLowerCase();
+        var bottomfloor = prompt("You sit up and find yourself in a white room. There is a door behind you, some paintings in front of you, and a set of stairs to the right. What would you like to do? \n -look around \n- walk \n- go back to sleep").toLowerCase();
     
-        if (bottomfloor == "look around" || Bottomfloor == "look") {
+        if (bottomfloor == "look around") {
             var bottomfloorLook = prompt("The room is quite small. There is a door behind you, some paintings in front of you, and a set of stairs to the right. Everything but the paintings are white.");
         }
             if (bottomfloor == "walk") {
             var direction = prompt("What do you wish to walk towards?");
         }
-        
-            else if (bottomfloor == "go back to sleep" || Bottomfloor == "sleep") {
+                        
+            else if (bottomfloor == "go back to sleep") {
             alert("You slumber...");
             var resume = confirm("Do you wish to continue?");
             }
@@ -46,10 +46,9 @@ function Game() {
                 else {
                 alert("Game Over!");
             }
+
     
-       
-        
-        if (direction == "upstaris" || "stairs") {
+       if (direction == "upstaris" || "stairs") {
             Upstairs();
             }
         
@@ -63,6 +62,7 @@ function Game() {
             if (choice == "forest" || "the forest painting" || "the forest one") {
             Forest();
             }
+
     }
     
     function Forest() {
