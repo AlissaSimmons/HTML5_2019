@@ -17,18 +17,45 @@
                 margin-left:440px;
             }
             h3{
-                color:lightgray;
+                color:lightgrey;
                 font-family:"Indie Flower",cursive;
                 font-size:30px;
                 margin:0 0 0 670px;
             }
             div#box{
-                background-color:lightyellow;
-                width:10px;
-                height:10px;
+                background-color:lightgoldenrodyellow;
+                width:20px;
+                height:20px;
                 position:absolute;
                 left:5px;
                 top:130px;
+            }
+            div#circle{
+                background-color:lightgoldenrodyellow;
+                width:100px;
+                height:105px;                
+                border-radius: 100%;
+                position:absolute;
+                left:100px;
+                top:130px;
+            }
+            div#triangle{
+                background-color: lightgoldenrodyellow
+                width:0;
+                height: 0;
+                border-left: 5px solid lightgoldenrodyellow;
+                border-right: 5px solid lightgoldenrodyellow;
+                border-bottom: 5px solid lightgoldenrodyellow;
+            }
+            img#E{
+                display:block;
+                width:auto;
+                height:auto;
+                border:solid 5px red;
+                position: absolute;
+                top: 130px;
+                left: 200px;
+                
             }
         </style>
     </head>
@@ -36,5 +63,9 @@
         <h1>CSS Exercises</h1>
         <h3>Vol.1</h3>
         <div id="box"></div>
+        <div id="circle"></div>  
+        <div id="triangle"></div>
+        <img src="E.jpg"
+         id="E">
     </body>
 </html>
