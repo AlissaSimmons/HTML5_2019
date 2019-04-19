@@ -1,3 +1,7 @@
+/* Google Fonts 
+font-family: 'Underdog', cursive;
+*/
+
 /* Stylesheet for Mobile App */
 html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6
 {
@@ -26,7 +30,7 @@ header{
 
 header h1{
     color:cornflowerblue;
-    font-family:"Tahoma",sans-serif;
+    font-family: 'Underdog', cursive;
     font-size:50px;
 }
 
@@ -40,9 +44,27 @@ nav{
     color:grey;
     font-size:20px;
 }
+nav ul{
+    list-style:none;
+}
+nav ul li{
+    float:left;
+    padding: 5px 15px;
+    border-right:2px solid #96e8e0;
+}
+nav ul li a{
+    color:darkgray;
+    text-decoration:none;
+}
+nav ul li a:hover{
+    background-color:#96e8e0;
+}
 
 footer{
     width:100%;
     height:50px;
     background-color:burlywood;
+}
+div.keepOpen{
+    clear: both;
 }
