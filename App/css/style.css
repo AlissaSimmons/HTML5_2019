@@ -26,7 +26,7 @@ header{
 
 
 header h1{
-    color:cornflowerblue;
+    color:skyblue;
     font-family: 'Underdog', cursive;
     font-size:50px;
 }
@@ -35,6 +35,7 @@ div#content{
     width:100%;
     background-color:skyblue;
 }
+/*
 
 nav{
     background-color:cornflowerblue;
@@ -56,7 +57,34 @@ nav ul li a:hover{
     background-color:skyblue;
     color:black;
 }
+*/
+.icon-bar {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+.icon-bar a{
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding:20px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
 
+.icon-bar a:hover{
+    background-color:#000;
+}
+
+.activ{
+    background-color:#ffa20e;
+}
+
+/*
 footer{
     position:absolute;
     bottom:0;
@@ -69,8 +97,6 @@ div.keepOpen{
     clear: both;
 }
 
-
-
 @media screen and (max-width: 600px) {
     div#container{
         width:100%;
@@ -81,3 +107,4 @@ div.keepOpen{
         text-align:center;
     }
 }
+*/
