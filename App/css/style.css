@@ -18,14 +18,21 @@ div#container{
     border:3px solid lightgrey;
     background-color:black;
 }
+
 header{
-    width:90.5%;
+    width:94.2%;
     padding:50px;
-    background color:grey;
+    background-color: black;
+}
+header img#Logo{
+    display:block;
+    margin:auto;
+    width: 100px;
 }
 
 
 header h1{
+    text-align: center;
     color:skyblue;
     font-family: 'Underdog', cursive;
     font-size:50px;
